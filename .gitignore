@@ -1,0 +1,15 @@
+# Secrets
+.env
+**/.env
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+
+# Logs and OS
+*.log
+.DS_Store
