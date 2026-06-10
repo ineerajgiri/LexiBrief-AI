@@ -27,7 +27,7 @@ function App() {
   const [historyLoading, setHistoryLoading] = useState(false);
   const [deletingIds, setDeletingIds] = useState([]);
 
-  const API_BASE = 'http://localhost:5001';
+  const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001';
 
   const fetchHistoryList = async () => {
     try {
@@ -378,7 +378,7 @@ function App() {
               AI Breakdown Engine
             </h2>
 
-            <div className="relative flex-1 min-h-[420px] rounded-2xl border border-slate-600/50 bg-slate-900/50 p-5 shadow-inner shadow-black/30">
+            <div className="relative flex-1 min-h-105 rounded-2xl border border-slate-600/50 bg-slate-900/50 p-5 shadow-inner shadow-black/30">
               {glitchFlash && (
                 <motion.div
                   initial={{ opacity: 0 }}
