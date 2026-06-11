@@ -133,6 +133,7 @@ function App() {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
+        timeout: 120000, 
       });
 
       setAnalysis(response.data.aiAnalysis);
