@@ -231,7 +231,7 @@ function App() {
         transition={{ duration: 0.65, ease: 'easeOut' }}
         className="relative mx-auto w-full max-w-6xl rounded-3xl border border-slate-700/50 bg-slate-800/60 backdrop-blur-xl shadow-[0_20px_80px_rgba(2,6,23,0.7)] p-6 md:p-10"
       >
-        <header className="relative z-20 mb-14 pt-2 text-center md:mb-16">
+        <header className="relative z-20 mb-14 pt-12 text-center md:mb-16 md:pt-2">
           <motion.button
             type="button"
             whileHover={{ scale: 1.03 }}
